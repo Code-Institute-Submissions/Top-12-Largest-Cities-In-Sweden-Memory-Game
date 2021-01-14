@@ -202,3 +202,16 @@ html {
   color: #fefefe;
 }
 
+
+/* MediaQuery */
+
+@media only screen and (max-width: 890px) {
+  .room .card {
+    width: 110px;
+    height: 160px;
+  }
+
+  .board {
+    top: -65%;
+  }
+}
