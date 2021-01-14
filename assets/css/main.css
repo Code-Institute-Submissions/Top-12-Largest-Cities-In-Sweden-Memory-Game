@@ -215,3 +215,16 @@ html {
     top: -65%;
   }
 }
+
+
+@media only screen and (max-width: 690px) {
+  .room .card {
+    width: 85px;
+    height: 120px;
+  }
+
+  .board {
+    width: 300px;
+    top: -65%;
+  }
+}
