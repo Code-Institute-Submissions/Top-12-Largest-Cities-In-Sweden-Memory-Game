@@ -190,3 +190,15 @@ html {
 .fab {
   font-size: 1.5em;
 }
+
+
+/* Footer Section */
+
+.disclaimer {
+  font-size: 1em;
+  margin-top: 0.5em;
+  padding-bottom: 1em;
+  font-weight: 300;
+  color: #fefefe;
+}
+
