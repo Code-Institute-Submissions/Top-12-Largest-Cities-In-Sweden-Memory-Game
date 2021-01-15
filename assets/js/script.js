@@ -37,4 +37,17 @@ $(document).ready(function () {
         $start = $('.start'),
         $again = $('.again');
 
+
+
+    //3*8 card group;
+    let card_id = 0
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 8; j++) {
+            $('.room').append('	<div class="card" data-id="' + card_id + '"><div class="front face"></div><div  data-bid="0" class="back face" ></div></div>')
+            card_id++;
+        }
+        $('.room').append('<br>')
+    }
+
+
 });
