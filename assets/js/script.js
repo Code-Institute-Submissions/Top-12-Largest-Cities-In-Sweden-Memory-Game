@@ -25,9 +25,16 @@ $(document).ready(function () {
         secn_card = null;
 
 
-     //Decleared the default time setting
+    //Decleared the default time setting
     let stop_fa = false,
         stop_fc = true,
         stop_time = true;
+
+
+    //Decleared the card, board, start and play-again.
+    let $card = $('.card'),
+        $board = $('.board'),
+        $start = $('.start'),
+        $again = $('.again');
 
 });
