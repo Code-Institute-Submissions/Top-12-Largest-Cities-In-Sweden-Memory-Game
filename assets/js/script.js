@@ -50,4 +50,17 @@ $(document).ready(function () {
     }
 
 
+    //Decleared the start button function.
+    $start.click(function () {
+        total = 0;
+        stop_fa = true;
+        stop_fc = false;
+        stop_time = false;
+        $('.card').removeClass('flip');
+        $start.hide();
+        randomIMG();
+    })
+
+
+
 });
