@@ -74,6 +74,14 @@ $(document).ready(function () {
         flip_auto();
     })
 
+    //Board hide function.
+    $board.hide();
+    randomIMG();
+    flip_auto();
+    flip_auto();
+    flip_auto();
+    flip_click();
+
 
 
 });
