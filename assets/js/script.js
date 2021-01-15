@@ -195,6 +195,24 @@ $(document).ready(function () {
 
     }
 
+    
+    //Auto-Flip function
+    function flip_auto(time) {
+
+        setTimeout(function () {
+            if (stop_fa) {
+                return;
+            }
+
+            let r_ran = randomNum(1, 24)
+            $('[data-id="' + r_ran + '"]').toggleClass('flip')
+
+            let newTime = randomNum(500, 1000);
+            flip_auto(newTime)
+        }, time)
+    }
+
+
 
 
 
