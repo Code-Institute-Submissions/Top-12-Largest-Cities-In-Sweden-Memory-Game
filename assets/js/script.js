@@ -24,4 +24,10 @@ $(document).ready(function () {
         first_card = null,
         secn_card = null;
 
+
+     //Decleared the default time setting
+    let stop_fa = false,
+        stop_fc = true,
+        stop_time = true;
+
 });
