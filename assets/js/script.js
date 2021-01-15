@@ -83,5 +83,37 @@ $(document).ready(function () {
     flip_click();
 
 
+    // $('.card').addClass('fliped');
+    function randomIMG() {
+
+        let c_array = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12];
+        let c_length = c_array.length;
+        let $card = $('.card');
+
+
+        $card.each(function () {
+            let r_id = Math.floor(Math.random() * (c_length - 1)); // Get Random Number 
+
+
+            let temp = c_array[r_id]; //Swaping
+            c_array[r_id] = c_array[c_length - 1];
+            c_array[c_length - 1] = temp;
+
+
+            c_length-- // decrement c_length by 1
+
+            $(this).find('.back').css({ // Set css
+                'background-image': 'url(' + img[temp - 1] + ')',
+                'background-repeat': 'no-repeat',
+                'background-size': '100%'
+            })
+
+            $(this).find('.back').attr('data-bid', temp) // Set data attribute
+        })
+
+        return 0;
+    }
+
+
 
 });
