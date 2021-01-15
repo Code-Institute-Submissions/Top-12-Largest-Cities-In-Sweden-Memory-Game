@@ -114,6 +114,71 @@ $(document).ready(function () {
         return 0;
     }
 
+    
+    //Card flip on-click function
+    function flip_click() {
+        total = 0;
+        move = 0;
+        count = 1;
+        let i = 0
+        first_card = null;
+        secn_card = null;
+        let $card = $('.card');
 
 
-});
+
+        $card.find('.front').click(function () {
+
+            if (stop_fc == true) {
+                return 0;
+            }
+
+
+            $(this).parent('.card').toggleClass('flip');
+            move++;
+            $('.c_move').html(move);
+
+            if (count == 1) {
+                first_card = $(this).parent('.card').find('.back').attr('data-bid');
+            } else if (count == 2) {
+                secn_card = $(this).parent('.card').find('.back').attr('data-bid');
+            }
+
+
+            if (first_card == secn_card) {
+
+                $('[data-bid="' + first_card + '"]').parent('.card').addClass('fliped')
+                total++;
+                if (total == 12) {
+
+                    stop_time = true;
+
+
+                    let sec_f = pad(++sec % 60),
+                        min_f = pad(parseInt(sec / 60, 10));
+                    stop_fc = reset(move, sec_f, min_f);
+                    stop_fc = true;
+                    move = 0;
+                }
+
+            }
+            if (stop_fc) {
+                return
+            }
+            count++
+            if (count > 2) {
+                first_card = null;
+                secn_card = null;
+                count = 1;
+                setTimeout(function () {
+                    $card.removeClass('flip');
+
+                }, 400)
+            }
+        });
+
+
+
+
+
+    });
