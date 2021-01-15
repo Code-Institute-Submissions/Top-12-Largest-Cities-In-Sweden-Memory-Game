@@ -62,5 +62,18 @@ $(document).ready(function () {
     })
 
 
+    //Decleared the play again button function.
+    $again.click(function () {
+        stop_fa = false;
+        stop_fc = true;
+        $start.show();
+        $board.hide();
+        $('.card').removeClass('fliped');
+        randomIMG();
+        flip_auto();
+        flip_auto();
+    })
+
+
 
 });
