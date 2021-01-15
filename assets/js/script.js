@@ -195,7 +195,7 @@ $(document).ready(function () {
 
     }
 
-    
+
     //Auto-Flip function
     function flip_auto(time) {
 
@@ -213,8 +213,16 @@ $(document).ready(function () {
     }
 
 
+    //Random Number function
+    function randomNum(min, max) {
+        return Math.floor(Math.random() * ((max - min) + 1) + min);
+    }
 
-
-
-
+    function reset(move, sec, min) {
+        $board.show()
+        $board.find('.scr_moves').html(move);
+        $board.find('.scr_sec').html(sec);
+        $board.find('.scr_min').html(min);
+        return true;
+    }
 });
