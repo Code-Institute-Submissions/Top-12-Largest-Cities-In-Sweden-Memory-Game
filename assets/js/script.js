@@ -114,7 +114,7 @@ $(document).ready(function () {
         return 0;
     }
 
-    
+
     //Card flip on-click function
     function flip_click() {
         total = 0;
@@ -178,7 +178,25 @@ $(document).ready(function () {
         });
 
 
+        //Timer function
+        let sec = 0;
+
+        function pad(val) {
+            return val > 9 ? val : "0" + val;
+        }
+        setInterval(function () {
+            if (stop_time) {
+                sec = 0
+                return
+            }
+            $(".sec").html(pad(++sec % 60));
+            $(".min").html(pad(parseInt(sec / 60, 10)));
+        }, 1000);
+
+    }
 
 
 
-    });
+
+
+});
