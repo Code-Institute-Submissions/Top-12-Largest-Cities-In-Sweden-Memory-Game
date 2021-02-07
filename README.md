@@ -20,7 +20,7 @@ Finally, the **Footer** section of the **Memory Game** contains the **Developer*
 ## Demo
 
 You can find live preview for this project [here](https://godreigneth.github.io/Top-12-Largest-Cities-In-Sweden-Memory-Game/)
-<video width="100%" controls autoplay><source src="/assets/images/Top_12_Largest_Cities_In_Sweden.mp4" type="video/mp4" style="margin: 0"></video>
+<a target="_blank" rel="noopener noreferrer" href="/assets/images/mGameResponsive.gif"><img src="/assets/images/Top_12_Largest_Cities_In_Sweden.gif" style="max-width:100%;"></a>
 
 
 ## UX
