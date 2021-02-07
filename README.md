@@ -92,7 +92,12 @@ This section contains the **Developer** information, and **Disclaimer** notice.
 - Add More Sections
 
 ## BUGS
+### Problem
+- The game board kept displaying whenever the game url is loaded or reloaded.
+See image below:
 
+### Solution
+- It was fixed by adding the Bootstrap <code> d-none </code> class to board div.
 
 ## Technologies Used
 
