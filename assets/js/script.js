@@ -51,11 +51,7 @@ $(document).ready(function () {
 
 
     //Decleared the start button function.
-    $start.click(function () {
-        total = 0;
-        stop_fa = true;
-        stop_fc = false;
-        stop_time = false;
+    $start.click(function () {total = 0; stop_fa = true; stop_fc = false; stop_time = false;
         $('.card').removeClass('flip');
         $start.hide();
         randomIMG();
@@ -75,7 +71,7 @@ $(document).ready(function () {
     })
 
     //Board hide function.
-    $board.hide();
+    //$board.hide();
     randomIMG();
     flip_auto();
     flip_auto();
@@ -120,7 +116,7 @@ $(document).ready(function () {
         total = 0;
         move = 0;
         count = 1;
-        let i = 0
+        let i = 0;
         first_card = null;
         secn_card = null;
         let $card = $('.card');
@@ -219,7 +215,7 @@ $(document).ready(function () {
     }
 
     function reset(move, sec, min) {
-        $board.show()
+        $board.toggleClass("d-none")
         $board.find('.scr_moves').html(move);
         $board.find('.scr_sec').html(sec);
         $board.find('.scr_min').html(min);
